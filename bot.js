@@ -25,7 +25,7 @@ function respond() {
   }
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("'Command' -- 'Function' <br /> /rules -- GIML rules <br /> /sch 'team initials' -- Team Schedule <br /> /ply 'Player Name' -- Player Info <br /> /ros 'team initials' -- Team Roster");
+    postMessage("'Command' -- 'Function'" <br /> "/rules -- GIML rules" <br /> "/sch 'team initials' -- Team Schedule" <br /> "/ply 'Player Name' -- Player Info" <br /> "/ros 'team initials' -- Team Roster");
     this.res.end();
   } 
   else if(request.text && botRegexStop.test(request.text)) {
