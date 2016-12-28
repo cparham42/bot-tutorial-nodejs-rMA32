@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
-      botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
+      botRegexSlut = /^\/help/; botRegexStop = /^\/stop/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/;
@@ -25,7 +25,7 @@ function respond() {
   }
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
+    postMessage("'Command' -- 'Function' ... /rules -- GIML rules ... /sch 'team initials' -- Team Schedule ... /ply 'Player Name' -- Player Info ... /ros 'team initials' -- Team Roster");
     this.res.end();
   } 
   else if(request.text && botRegexStop.test(request.text)) {
