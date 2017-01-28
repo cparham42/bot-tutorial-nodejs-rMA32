@@ -25,7 +25,7 @@ function respond() {
   }
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("'Command' -- 'Function' \n/rules -- GIML rules  \n/sch 'team initials' -- Team Schedule  \n/ply 'Player Name' -- Player Info  \n/ros 'team initials' -- Team Roster  \n/week -- Weekly Schedule  \n/forum -- DL Forum  \n/standings -- Division Standings  \n/fb -- Facebook Group  \n/teams -- Users List");
+    postMessage("'Command' -- 'Function' \n/rules -- GIML rules  \n/sch 'team initials' -- Team Schedule  \n/ply 'Player Name' -- Player Info  \n/ros 'team initials' -- Team Roster  \n/week -- Weekly Schedule  \n/forum -- DL Forum  \n/standings -- Division Standings  \n/fb -- Facebook Group  \n/teams -- Users List  \n/welcome -- Welcome Message");
     this.res.end();
   } 
   else if(request.text && botRegexStop.test(request.text)) {
