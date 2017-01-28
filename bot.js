@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/week/;  botRegexDL = /^\/ros/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/standings/;botRegexGTA = /^\/forum/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
+      botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/teams/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexSlut = /^\/help/; botRegexStop = /^\/fb/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
@@ -25,7 +25,7 @@ function respond() {
   }
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("'Command' -- 'Function' \n/rules -- GIML rules  \n/sch 'team initials' -- Team Schedule  \n/ply 'Player Name' -- Player Info  \n/ros 'team initials' -- Team Roster  \n/week -- Weekly Schedule  \n/forum -- DL Forum  \n/standings -- Division Standings  \n/fb -- Facebook Group");
+    postMessage("'Command' -- 'Function' \n/rules -- GIML rules  \n/sch 'team initials' -- Team Schedule  \n/ply 'Player Name' -- Player Info  \n/ros 'team initials' -- Team Roster  \n/week -- Weekly Schedule  \n/forum -- DL Forum  \n/standings -- Division Standings  \n/fb -- Facebook Group  \n/teams -- Users List");
     this.res.end();
   } 
   else if(request.text && botRegexStop.test(request.text)) {
@@ -127,7 +127,7 @@ function respond() {
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.reddit.com/r/maddenall32");
+    postMessage("https://docs.google.com/spreadsheets/d/10Q_DAlaMIEfHeQlJH7f3N2uyTqoKhVkOB4Xq8ru5IAw/edit#gid=0");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
