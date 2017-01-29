@@ -137,7 +137,7 @@ function respond() {
   } 
   else if(request.text && botRegexWk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Welcome to the league! To join the league on PS4, search GIML and the password is abcd1234. Be sure to check out the bot by typing '/help' in the chat. If you know any other sim players looking for a league, bring them in. Make sure you join the Facebook group and check out the rules while you're here.");
+    postMessage("Welcome to the league! To join the league on PS4, search GIML and the password is abcd1235. Be sure to check out the bot by typing '/help' in the chat. If you know any other sim players looking for a league, bring them in. Make sure you join the Facebook group and check out the rules while you're here.");
     this.res.end();
   } 
   else if(request.text && botODB.test(request.text)) {
