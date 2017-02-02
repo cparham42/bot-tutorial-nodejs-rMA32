@@ -9,7 +9,7 @@ var HTTPS = require('https');
 	  var request = JSON.parse(this.req.chunks[0]),
 	      botRegex = /^\/week/;  botRegexDL = /^\/ros/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
 	      botRegexAd=/^\/standings/;botRegexGTA = /^\/DL/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-	      botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
+	      botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/don/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
 	      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
 	      botRegexSlut = /^\/help/; botRegexWelcome = /^\/welcome/;
 	      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexL = /^\/takethis/; botRegexCash = /^\/cash/;
@@ -135,7 +135,7 @@ var HTTPS = require('https');
 	  } 
 	  else if(request.text && botRegexSh.test(request.text)) {
 	    this.res.writeHead(200);
-	    postMessage("¯\\_(ツ)_/¯");
+	    postMessage("https://www.youtube.com/channel/UC962T-6DTtIpIs-gCv47WuQ");
 	    this.res.end();
 	  } 
 	  else if(request.text && botRegexWk.test(request.text)) {
