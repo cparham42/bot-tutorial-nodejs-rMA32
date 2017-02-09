@@ -99,7 +99,7 @@ var HTTPS = require('https');
 	  }
 	  else if(request.text && botRegexRules.test(request.text)) {
 	    this.res.writeHead(200);
-	    postMessage("https://docs.google.com/document/d/17M8LSkOgGI0V2gf1Zqnxmd74DtJsdmWMk_E6Ec8q-IU/edit");
+	    postMessage("https://docs.google.com/document/d/1ShmkjSr2qZbNpnD0pRyVjgu9LsG0DDG8BQi3CJQVcx4/edit?usp=sharing");
 	    this.res.end();
 	  } 
 	  else if(request.text && botRegexGTA.test(request.text)) {
