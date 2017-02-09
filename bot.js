@@ -14,7 +14,7 @@ var HTTPS = require('https');
 	      botRegexSlut = /^\/help/; botRegexWelcome = /^\/welcome/;
 	      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexL = /^\/takethis/; botRegexCash = /^\/cash/;
 	      botRegexWut = /^\/wut/; botRegexTrade = /^\/trade/; botRegexNooo = /^\/plzno/;
-	      botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/;
+	      botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/new/;
 	      siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
 	      siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
 	  var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -165,7 +165,7 @@ var HTTPS = require('https');
 	  }
 	  else if(request.text && botRegexSchedule.test(request.text)) {
 	    this.res.writeHead(200);
-	    postMessage("https://docs.google.com/spreadsheets/d/1EORExkB6HNLZhi22mRo2Xmo6Yx90Em2rGNAYlAdjTeI/edit?usp=drive_web");
+	    postMessage("Welcome to MFL! If you are new to this type of league, be sure to check out the rules while you're here. We have a bot that can link the rules for you by typing /rules. Type /help to see what else the bot can do! League name is MFL MaddenFootballLg, Password is abcd12345.");
 	    this.res.end();
 	  }
 	  
