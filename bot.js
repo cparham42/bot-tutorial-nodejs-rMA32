@@ -14,7 +14,7 @@ var HTTPS = require('https');
 	      botRegexSlut = /^\/help/; botRegexWelcome = /^\/welcome/;
 	      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexL = /^\/takethis/; botRegexCash = /^\/cash/;
 	      botRegexWut = /^\/wut/; botRegexTrade = /^\/trade/; botRegexNooo = /^\/plzno/;
-	      botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/new/;
+	      botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/new/; botRegexTrade = /^\/trades/;
 	      siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
 	      siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
 	  var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -45,6 +45,11 @@ var HTTPS = require('https');
 	    postMessage("http://www.wikihow.com/Tie-a-Noose");
 	    this.res.end();
 	  } 
+	  else if(request.text && botRegexTrade.test(request.text)) {
+	    this.res.writeHead(200);
+	    postMessage("https://docs.google.com/spreadsheets/d/14loL2UrLo73UcGXRF4Va6cYRSj3G5eTrC0KxTXQU7CA/edit#gid=0");
+	    this.res.end();
+	  }
 	  else if(request.text && botRegexL.test(request.text)) {
 	    this.res.writeHead(200);
 	    postMessage("https://pbs.twimg.com/profile_images/711399945853607936/qdGJrEH7.jpg");
