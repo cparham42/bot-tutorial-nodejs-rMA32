@@ -47,7 +47,7 @@ var HTTPS = require('https');
 	  } 
 	  else if(request.text && botRegexTrade.test(request.text)) {
 	    this.res.writeHead(200);
-	    postMessage("https://docs.google.com/spreadsheets/d/14loL2UrLo73UcGXRF4Va6cYRSj3G5eTrC0KxTXQU7CA/edit#gid=0");
+	    postMessage("https://docs.google.com/spreadsheets/d/14loL2UrLo73UcGXRF4Va6cYRSj3G5eTrC0KxTXQU7CA/edit?usp=sharing");
 	    this.res.end();
 	  }
 	  else if(request.text && botRegexL.test(request.text)) {
