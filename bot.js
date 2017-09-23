@@ -7,7 +7,7 @@ var HTTPS = require('https');
 
 	function respond() {
 	  var request = JSON.parse(this.req.chunks[0]),
-	      botRegex = /^\/week/;  botRegexDL = /^\/ros/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+	      botRegexInjuries = /^\/injuries/; botRegex = /^\/week/;  botRegexDL = /^\/ros/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
 	      botRegexAd=/^\/standings/;botRegexGTA = /^\/DL/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
 	      botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/don/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
 	      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
@@ -25,6 +25,11 @@ var HTTPS = require('https');
 	    postMessage("http://daddyleagues.com/MFLMaddenLg/schedules");
 	    this.res.end();
 	  }
+	  else if(request.text && botRegexInjuries.test(request.text)) {
+	    this.res.writeHead(200);
+	    postMessage(https://docs.google.com/spreadsheets/d/1Q5pe7VtPB3dnl6e3OLGFOf7GH5SS9ZO7tzQP_TRXWTU/edit?usp=sharing);
+	    this.res.end();
+	  } 
 	  else if(request.text && botRegexSlut.test(request.text)) {
 	    this.res.writeHead(200);
 	    postMessage("'Command' -- 'Function' \n/rules -- MFLMaddenLg rules  \n/sch 'team initials' -- Team Schedule  \n/ply 'Player Name' -- Player Info  \n/ros 'team initials' -- Team Roster  \n/week -- Weekly Schedule  \n/DL -- DaddyLeagues Page  \n/standings -- Division Standings  \n/twitch 'username' -- Twitch Stream  \n/users -- Users list  \n/trades -- Current trade standing");
