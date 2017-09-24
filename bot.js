@@ -27,7 +27,7 @@ var HTTPS = require('https');
 	  }
 	  else if(request.text && botRegexInjuries.test(request.text)) {
 	    this.res.writeHead(200);
-	    postMessage(https://docs.google.com/spreadsheets/d/1Q5pe7VtPB3dnl6e3OLGFOf7GH5SS9ZO7tzQP_TRXWTU/edit?usp=sharing);
+	    postMessage("https://docs.google.com/spreadsheets/d/1Q5pe7VtPB3dnl6e3OLGFOf7GH5SS9ZO7tzQP_TRXWTU/edit?usp=sharing");
 	    this.res.end();
 	  } 
 	  else if(request.text && botRegexSlut.test(request.text)) {
