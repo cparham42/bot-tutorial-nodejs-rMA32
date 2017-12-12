@@ -160,7 +160,7 @@ var HTTPS = require('https');
 	  }
 	  else if(request.text && botRegexSchedule.test(request.text)) {
 	    this.res.writeHead(200);
-	    postMessage("Welcome to MFL! If you are new to this type of league, be sure to check out the rules while you're here. We have a bot that can link the rules for you by typing /rules. Type /help to see what else the bot can do! League name is TBD, Password is TBD.");
+	    postMessage("Welcome to MFL! If you are new to this type of league, be sure to check out the rules while you're here. We have a bot that can link the rules for you by typing /rules. Type /help to see what else the bot can do! League name is MFL3, Password is SuckItCory.");
 	    this.res.end();
 	  }
 	  
