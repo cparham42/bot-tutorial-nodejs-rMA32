@@ -8,7 +8,7 @@ var HTTPS = require('https');
 	function respond() {
 	  var request = JSON.parse(this.req.chunks[0]),
 	      botRegexInjuries = /^\/injuries/; botRegex = /^\/week/;  botRegexDL = /^\/ros/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
-	      botRegexAd=/^\/standings/;botRegexGTA = /^\/DL/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+	      botRegexAd=/^\/standings/;botRegexGTA = /^\/DL/; botRegexSC = /^\/sch/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/advance/;
 	      botRegexP = /^\/ply/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/don/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
 	      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
 	      botRegexSlut = /^\/help/; botRegexWelcome = /^\/welcome/;
@@ -35,6 +35,11 @@ var HTTPS = require('https');
 	    postMessage("http://i.imgur.com/GfJNU68.gif");
 	    this.res.end();
 	  } 
+	  else if(request.text && botDuck.test(request.text)) {
+	    this.res.writeHead(200);
+	    postMessage("No, @Browns");
+	    this.res.end();
+	  }
 	  else if(request.text && botRegexProp.test(request.text)) {
 	    this.res.writeHead(200);
 	    postMessage("https://i.groupme.com/409x327.jpeg.08b5d95c51bb4897835cfe6b514f2f52.large");
